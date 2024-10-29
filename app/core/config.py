@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URL = 'sqlite:///./domain/sql_app.db'
