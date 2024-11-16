@@ -59,6 +59,6 @@ async def delete_user(user_id: int) -> None:
 
 
 @router_users.get('/')
-async def read_all_users():
+async def read_all_users() -> list[UserVO]:
     users = db.query(User).all()
     return users

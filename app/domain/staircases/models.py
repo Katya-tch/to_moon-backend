@@ -32,6 +32,7 @@ class StaircaseCreateVO(BaseModel):
     stairs_per_floor: int = 18
     stairs_to_first: int = 5
     have_elevator: bool = True
+    owner_id: int | None = 1
 
 
 class StaircaseVO(StaircaseCreateVO):

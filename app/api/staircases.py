@@ -46,6 +46,6 @@ async def delete_staircase(staircase_id: int) -> None:
 
 
 @router_staircases.get('/')
-async def read_all_staircases():
+async def read_all_staircases() -> list[StaircaseVO]:
     staircases = db.query(Staircase).all()
     return staircases
